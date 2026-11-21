@@ -1,0 +1,12 @@
+# File yang tidak dibutuhkan API di Vercel
+requirements.txt
+data/
+figures/
+tests/
+app/ui/
+.streamlit/
+LAPORAN.md
+src/train.py
+src/tampilan.py
+artifacts/hasil_validation.csv
+artifacts/importance.csv

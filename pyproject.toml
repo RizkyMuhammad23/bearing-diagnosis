@@ -1,0 +1,18 @@
+# Konfigurasi deploy API FastAPI ke Vercel.
+# Aplikasi Streamlit tetap memakai requirements.txt (Streamlit Cloud membaca requirements.txt lebih dulu).
+[project]
+name = "bearing-diagnosis-api"
+version = "1.0.0"
+description = "API diagnosis kerusakan bearing (Kasus 04, Tim Bearing)"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "scikit-learn==1.9.1",
+    "numpy==2.5.3",
+    "pandas==3.0.5",
+    "joblib==1.6.0",
+    "fastapi==0.164.0",
+    "pydantic==2.13.5",
+]
+
+[tool.vercel]
+entrypoint = "app.api.main:app"
